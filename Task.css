@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* background: rgb(255, 255, 60); */
+}
+
+body {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+.box1 {
+    background: rgb(202, 202, 202);
+    box-shadow: 8px 8px 15px black,
+    2px 2px 2px white inset;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 230px;
+    padding: 20px 20px 30px 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.box1 h2{
+    color: black;
+    animation: colorchange 2s linear infinite;
+}
+@keyframes colorchange {
+    0%{
+        color: black;
+    }
+    10%{
+        color: red;
+    }
+    0%{
+        color: rgb(255, 94, 0);
+    }
+    20%{
+        color: rgb(170, 0, 147);
+    }
+    30%{
+        color: green;
+    }
+    40%{
+        color: rgb(66, 0, 172);
+    }
+    50%{
+        color: rgb(31, 79, 141);
+    }
+    60%{
+        color: blue;
+    }
+    70%{
+        color: blueviolet;
+    }
+    80%{
+        color: orangered;
+    }
+    90%{
+        color: green;
+    }
+    100%{
+        color: rgb(66,0,172);
+    }
+    
+}
+
+#number {
+    width: 250px;
+    height: 35px;
+    text-align: center;
+    border-radius: 10px 0px 0px 0px;
+    border: 2px solid rgb(0, 0, 0);
+    margin: 10px 0 -2px 0;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+}
+
+
+#Check {
+    width: 254px;
+    height: 35px;
+    border-radius: 0px 0px 10px 0px;
+    border: 2px solid rgb(0, 0, 0);
+    background: rgba(0, 128, 0, 0.719);
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#Check:active {
+    background: rgb(9, 78, 18);
+    color: #fff;
+    transition: 0.2s;
+}
+
+#result {
+    background-color: rgb(255, 255, 255);
+    width: 244px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Slab', serif;
+}
